@@ -1,0 +1,15 @@
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0ea5a4;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#111;margin:0}
+.site-header{padding:2rem;text-align:center}
+.site-header h1{margin:0;font-size:2rem}
+.services{max-width:1000px;margin:0 auto;padding:1rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.06);text-align:center}
+.card img{width:96px;height:96px;margin-bottom:0.5rem}
+.site-footer{text-align:center;padding:1rem;color:var(--muted)}
