@@ -1,36 +1,27 @@
 # Pasos realizados - Frontend Record37
 
-Este archivo documenta las acciones realizadas automáticamente a partir de la tarea Notion "Frontend Record37".
+Este archivo documenta las acciones realizadas automáticamente a partir de la tarea Notion "Frontend Record37" y las mejoras aplicadas.
 
-## Resumen de la tarea original
-La tarea pedía:
-1. Crear un repositorio GitHub llamado `record37`.
-2. Crear un frontend (aquí mismo en el proyecto) con los servicios: Fútbol, Basket, Tennis, Baseball y Custom, cada uno con una imagen representativa.
-3. Añadir todas las issues en el repo.
-4. Hacer un Pull Request con los cambios.
+## Resumen de la mejora aplicada (Mejorar accesibilidad)
+Se implementaron las siguientes mejoras solicitadas en el issue "Mejorar accesibilidad":
 
-## Acciones realizadas localmente
-- Se creó la carpeta `record37/` en el workspace con un frontend estático minimal:
-  - `index.html` — página principal con cards para cada servicio
-  - `styles/styles.css` — estilos básicos
-  - `images/` — svg placeholders para cada servicio
-  - `README.md` — instrucciones y notas
-  - `docs/steps.md` — este archivo
+- Añadido enlace "Saltar al contenido" para teclado (`.skip-link`).
+- Estructura semántica mejorada: uso de roles (`banner`, `main`, `contentinfo`) y elementos semánticos (`nav`, `section`, `article`).
+- Encabezados por servicio (`h2`) con IDs y atributos `aria-labelledby` para facilitar navegación por lectores de pantalla.
+- Alt texts revisados y normalizados (ej. 'Grabaciones de fútbol' -> 'Grabaciones de fútbol').
+- Añadidas medidas `width`/`height` a imágenes para evitar reflows y mejorar rendimiento.
+- Estilos actualizados para mejorar contraste: color de texto más oscuro y foco visible con `outline` para accesibilidad de teclado.
+- Focus visible para enlaces y elementos interactivos, y preferencia de reducción de movimiento respetada.
 
-## Notion
-- Pág ina origen: Frontend Record37 — https://www.notion.so/292738623a5f80e78a04d5bb3bee7609
-- Contenido extraído y aplicado.
+## Archivos modificados
+- `index.html` — elementos semánticos, enlaces skip, ids y aria.
+- `styles/styles.css` — contraste, focus styles, skip-link styling.
 
-## Siguientes pasos que hice / pendientes
-- Inicializar git en `record37/`, crear repo remoto `record37` en GitHub y empujar los cambios.
-- Crear issues en el repositorio para tareas pendientes (se crearán automáticamente si se autoriza push/PR).
-- Crear PR desde rama `feature/frontend` hacia `main`.
-
-## Prompts y herramientas usadas
-- Búsqueda Notion: `mcp_notionmcp_notion-search` + `mcp_notionmcp_notion-fetch`.
-- Creación de archivos local: create_file.
-- (Opcional) Creación de repo, issues y PR: mcp_github_* (requiere permisos configurados).
+## Siguientes pasos sugeridos
+- Reemplazar placeholders por imágenes reales y optimizadas (issue #1).
+- Ejecutar una revisión rápida con Lighthouse o Axe para detectar mejoras adicionales.
+- Añadir tests de accesibilidad (axe-core) en CI.
 
 ---
 
-Archivo generado automáticamente por el agente que procesó la tarea Notion "Frontend Record37".
+Archivo actualizado automáticamente en la rama `feature/frontend`.
