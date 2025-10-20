@@ -15,3 +15,6 @@ python -m http.server 3000
 Próximos pasos sugeridos:
 - Inicializar git y subir a GitHub en un repo llamado `record37`.
 - Crear issues relacionadas (añadir imágenes reales, mejorar accesibilidad, añadir CI).
+
+
+_Commit adicional para generar diferencia y permitir PR_
