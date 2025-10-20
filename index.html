@@ -7,46 +7,63 @@
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1>Record37</h1>
-    <p>Grabaciones profesionales para cualquier deporte</p>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1>Record37</h1>
+      <p class="tagline">Grabaciones profesionales para cualquier deporte</p>
+      <nav aria-label="Enlaces principales">
+        <ul class="nav-list">
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="services">
-    <section class="cards">
-      <article class="card">
-        <img src="./images/soccer.jpg" alt="Grabaciones de fútbol"/>
-        <h3>Grabaciones de Fútbol</h3>
+  <main id="main" class="services" role="main">
+    <section id="services" class="cards" aria-label="Servicios disponibles">
+
+      <article class="card" role="article" aria-labelledby="svc-soccer">
+        <img src="./images/soccer.jpg" alt="Grabaciones de fútbol" width="96" height="96"/>
+        <h2 id="svc-soccer">Grabaciones de Fútbol</h2>
         <p>Grabaciones profesionales para partidos y entrenamientos de fútbol.</p>
       </article>
 
-      <article class="card">
-        <img src="./images/Basketball.png" alt="Grabaciones de Basket"/>
-        <h3>Grabaciones de Basket</h3>
+      <article class="card" role="article" aria-labelledby="svc-basketball">
+        <img src="./images/Basketball.png" alt="Grabaciones de baloncesto" width="96" height="96"/>
+        <h2 id="svc-basketball">Grabaciones de Basket</h2>
         <p>Producción de vídeo para baloncesto (partidos, highlights).</p>
       </article>
 
-      <article class="card">
-        <img src="./images/tennis.jpg" alt="Grabaciones de Tennis"/>
-        <h3>Grabaciones de Tennis</h3>
+      <article class="card" role="article" aria-labelledby="svc-tennis">
+        <img src="./images/tennis.jpg" alt="Grabaciones de tenis" width="96" height="96"/>
+        <h2 id="svc-tennis">Grabaciones de Tennis</h2>
         <p>Sesiones y match recordings para tenis.</p>
       </article>
 
-      <article class="card">
-        <img src="./images/Baseball.jpg" alt="Grabaciones de Baseball"/>
-        <h3>Grabaciones de Baseball</h3>
+      <article class="card" role="article" aria-labelledby="svc-baseball">
+        <img src="./images/Baseball.jpg" alt="Grabaciones de béisbol" width="96" height="96"/>
+        <h2 id="svc-baseball">Grabaciones de Baseball</h2>
         <p>Grabaciones profesionales para béisbol y entrenamientos.</p>
       </article>
 
-      <article class="card">
-        <img src="./images/custom.png" alt="Grabaciones custom"/>
-        <h3>Grabaciones Custom</h3>
+      <article class="card" role="article" aria-labelledby="svc-custom">
+        <img src="./images/custom.png" alt="Grabaciones a medida" width="96" height="96"/>
+        <h2 id="svc-custom">Grabaciones Custom</h2>
         <p>Servicios a medida para eventos y deportes menos comunes.</p>
       </article>
+
+    </section>
+
+    <section id="contact" class="contact" aria-label="Contacto">
+      <h2>Contacto</h2>
+      <p>Escríbenos para solicitar presupuesto o más información.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer" role="contentinfo">
     <p>&copy; Record37</p>
   </footer>
 </body>
